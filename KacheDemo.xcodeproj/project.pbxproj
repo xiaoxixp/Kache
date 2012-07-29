@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D77A7CEB15BFC7A4007F98AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A7CEA15BFC7A4007F98AF /* UIKit.framework */; };
+		D77A7CED15BFC7A4007F98AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A7CEC15BFC7A4007F98AF /* Foundation.framework */; };
+		D77A7CEF15BFC7A4007F98AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77A7CEE15BFC7A4007F98AF /* CoreGraphics.framework */; };
+		D77A7CF515BFC7A4007F98AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D77A7CF315BFC7A4007F98AF /* InfoPlist.strings */; };
+		D77A7CF715BFC7A4007F98AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7CF615BFC7A4007F98AF /* main.m */; };
+		D77A7CFB15BFC7A4007F98AF /* KCHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7CFA15BFC7A4007F98AF /* KCHAppDelegate.m */; };
+		D77A7D1215BFC8D2007F98AF /* KCHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7D1115BFC8D2007F98AF /* KCHMainViewController.m */; };
+		D77A7D1515BFD421007F98AF /* KObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7D1415BFD421007F98AF /* KObject.m */; };
+		D77A7D1815BFD463007F98AF /* KHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7D1715BFD463007F98AF /* KHolder.m */; };
+		D77A7D1B15BFD46F007F98AF /* Kache.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7D1A15BFD46F007F98AF /* Kache.m */; };
+		D77A7D2815BFE0E6007F98AF /* KQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7D2715BFE0E6007F98AF /* KQueue.m */; };
+		D77A7D2B15BFE0F3007F98AF /* KPool.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A7D2A15BFE0F3007F98AF /* KPool.m */; };
+		D78AE4DD15C0012300120494 /* KUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D78AE4DC15C0012300120494 /* KUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D77A7CE615BFC7A4007F98AF /* KacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77A7CEA15BFC7A4007F98AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D77A7CEC15BFC7A4007F98AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D77A7CEE15BFC7A4007F98AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D77A7CF215BFC7A4007F98AF /* KacheDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KacheDemo-Info.plist"; sourceTree = "<group>"; };
+		D77A7CF415BFC7A4007F98AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D77A7CF615BFC7A4007F98AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D77A7CF815BFC7A4007F98AF /* KacheDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KacheDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D77A7CF915BFC7A4007F98AF /* KCHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCHAppDelegate.h; sourceTree = "<group>"; };
+		D77A7CFA15BFC7A4007F98AF /* KCHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCHAppDelegate.m; sourceTree = "<group>"; };
+		D77A7D1015BFC8D2007F98AF /* KCHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCHMainViewController.h; sourceTree = "<group>"; };
+		D77A7D1115BFC8D2007F98AF /* KCHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCHMainViewController.m; sourceTree = "<group>"; };
+		D77A7D1315BFD421007F98AF /* KObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KObject.h; sourceTree = "<group>"; };
+		D77A7D1415BFD421007F98AF /* KObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KObject.m; sourceTree = "<group>"; };
+		D77A7D1615BFD463007F98AF /* KHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHolder.h; sourceTree = "<group>"; };
+		D77A7D1715BFD463007F98AF /* KHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHolder.m; sourceTree = "<group>"; };
+		D77A7D1915BFD46F007F98AF /* Kache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kache.h; sourceTree = "<group>"; };
+		D77A7D1A15BFD46F007F98AF /* Kache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kache.m; sourceTree = "<group>"; };
+		D77A7D2015BFDC20007F98AF /* KCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCH.h; sourceTree = "<group>"; };
+		D77A7D2315BFDC3A007F98AF /* KConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConfig.h; sourceTree = "<group>"; };
+		D77A7D2615BFE0E6007F98AF /* KQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQueue.h; sourceTree = "<group>"; };
+		D77A7D2715BFE0E6007F98AF /* KQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQueue.m; sourceTree = "<group>"; };
+		D77A7D2915BFE0F3007F98AF /* KPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPool.h; sourceTree = "<group>"; };
+		D77A7D2A15BFE0F3007F98AF /* KPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPool.m; sourceTree = "<group>"; };
+		D78AE4DB15C0012300120494 /* KUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUtil.h; sourceTree = "<group>"; };
+		D78AE4DC15C0012300120494 /* KUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KUtil.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D77A7CE315BFC7A4007F98AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77A7CEB15BFC7A4007F98AF /* UIKit.framework in Frameworks */,
+				D77A7CED15BFC7A4007F98AF /* Foundation.framework in Frameworks */,
+				D77A7CEF15BFC7A4007F98AF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D77A7CDB15BFC7A4007F98AF = {
+			isa = PBXGroup;
+			children = (
+				D77A7CF015BFC7A4007F98AF /* KacheDemo */,
+				D77A7CE915BFC7A4007F98AF /* Frameworks */,
+				D77A7CE715BFC7A4007F98AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D77A7CE715BFC7A4007F98AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D77A7CE615BFC7A4007F98AF /* KacheDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D77A7CE915BFC7A4007F98AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D77A7CEA15BFC7A4007F98AF /* UIKit.framework */,
+				D77A7CEC15BFC7A4007F98AF /* Foundation.framework */,
+				D77A7CEE15BFC7A4007F98AF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77A7CF015BFC7A4007F98AF /* KacheDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D77A7CF915BFC7A4007F98AF /* KCHAppDelegate.h */,
+				D77A7CFA15BFC7A4007F98AF /* KCHAppDelegate.m */,
+				D77A7D1015BFC8D2007F98AF /* KCHMainViewController.h */,
+				D77A7D1115BFC8D2007F98AF /* KCHMainViewController.m */,
+				D77A7CF115BFC7A4007F98AF /* Supporting Files */,
+			);
+			path = KacheDemo;
+			sourceTree = "<group>";
+		};
+		D77A7CF115BFC7A4007F98AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D77A7D0515BFC7C6007F98AF /* Kache */,
+				D77A7CF215BFC7A4007F98AF /* KacheDemo-Info.plist */,
+				D77A7CF315BFC7A4007F98AF /* InfoPlist.strings */,
+				D77A7CF615BFC7A4007F98AF /* main.m */,
+				D77A7CF815BFC7A4007F98AF /* KacheDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D77A7D0515BFC7C6007F98AF /* Kache */ = {
+			isa = PBXGroup;
+			children = (
+				D77A7D2015BFDC20007F98AF /* KCH.h */,
+				D77A7D2315BFDC3A007F98AF /* KConfig.h */,
+				D77A7D1315BFD421007F98AF /* KObject.h */,
+				D77A7D1415BFD421007F98AF /* KObject.m */,
+				D77A7D1615BFD463007F98AF /* KHolder.h */,
+				D77A7D1715BFD463007F98AF /* KHolder.m */,
+				D77A7D1915BFD46F007F98AF /* Kache.h */,
+				D77A7D1A15BFD46F007F98AF /* Kache.m */,
+				D77A7D2615BFE0E6007F98AF /* KQueue.h */,
+				D77A7D2715BFE0E6007F98AF /* KQueue.m */,
+				D77A7D2915BFE0F3007F98AF /* KPool.h */,
+				D77A7D2A15BFE0F3007F98AF /* KPool.m */,
+				D78AE4DB15C0012300120494 /* KUtil.h */,
+				D78AE4DC15C0012300120494 /* KUtil.m */,
+			);
+			path = Kache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D77A7CE515BFC7A4007F98AF /* KacheDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D77A7CFE15BFC7A4007F98AF /* Build configuration list for PBXNativeTarget "KacheDemo" */;
+			buildPhases = (
+				D77A7CE215BFC7A4007F98AF /* Sources */,
+				D77A7CE315BFC7A4007F98AF /* Frameworks */,
+				D77A7CE415BFC7A4007F98AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KacheDemo;
+			productName = KacheDemo;
+			productReference = D77A7CE615BFC7A4007F98AF /* KacheDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D77A7CDD15BFC7A4007F98AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KCH;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D77A7CE015BFC7A4007F98AF /* Build configuration list for PBXProject "KacheDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D77A7CDB15BFC7A4007F98AF;
+			productRefGroup = D77A7CE715BFC7A4007F98AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D77A7CE515BFC7A4007F98AF /* KacheDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D77A7CE415BFC7A4007F98AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77A7CF515BFC7A4007F98AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D77A7CE215BFC7A4007F98AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77A7CF715BFC7A4007F98AF /* main.m in Sources */,
+				D77A7CFB15BFC7A4007F98AF /* KCHAppDelegate.m in Sources */,
+				D77A7D1215BFC8D2007F98AF /* KCHMainViewController.m in Sources */,
+				D77A7D1515BFD421007F98AF /* KObject.m in Sources */,
+				D77A7D1815BFD463007F98AF /* KHolder.m in Sources */,
+				D77A7D1B15BFD46F007F98AF /* Kache.m in Sources */,
+				D77A7D2815BFE0E6007F98AF /* KQueue.m in Sources */,
+				D77A7D2B15BFE0F3007F98AF /* KPool.m in Sources */,
+				D78AE4DD15C0012300120494 /* KUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D77A7CF315BFC7A4007F98AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D77A7CF415BFC7A4007F98AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D77A7CFC15BFC7A4007F98AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D77A7CFD15BFC7A4007F98AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D77A7CFF15BFC7A4007F98AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KacheDemo/KacheDemo-Prefix.pch";
+				INFOPLIST_FILE = "KacheDemo/KacheDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D77A7D0015BFC7A4007F98AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KacheDemo/KacheDemo-Prefix.pch";
+				INFOPLIST_FILE = "KacheDemo/KacheDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D77A7CE015BFC7A4007F98AF /* Build configuration list for PBXProject "KacheDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D77A7CFC15BFC7A4007F98AF /* Debug */,
+				D77A7CFD15BFC7A4007F98AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D77A7CFE15BFC7A4007F98AF /* Build configuration list for PBXNativeTarget "KacheDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D77A7CFF15BFC7A4007F98AF /* Debug */,
+				D77A7D0015BFC7A4007F98AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D77A7CDD15BFC7A4007F98AF /* Project object */;
+}
