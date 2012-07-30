@@ -74,16 +74,17 @@
     [self.bodyBackground addSubview:self.body];
     [self.view addSubview:self.bodyBackground];
 
+    NSInteger delay = 1.0f;
     // Begin Test.
     [self printLog:@"===== Test Begin ====="];
-    [self performSelector:@selector(simpleTest) withObject:nil afterDelay:1.0f];
-    [self performSelector:@selector(queueTest) withObject:nil afterDelay:16.0f];
-    [self performSelector:@selector(poolTest) withObject:nil afterDelay:33.0f];
+//    [self performSelector:@selector(simpleTest) withObject:nil afterDelay:delay];   delay += 18;
+//    [self performSelector:@selector(queueTest) withObject:nil afterDelay:delay];    delay += 18;
+//    [self performSelector:@selector(poolTest) withObject:nil afterDelay:delay];     delay += 10;
     
-    [self performSelector:@selector(saveTest) withObject:nil afterDelay:43.0f];
-    [self performSelector:@selector(loadTest) withObject:nil afterDelay:50.0f];
+    [self performSelector:@selector(saveTest) withObject:nil afterDelay:delay];     delay += 7;
+    [self performSelector:@selector(loadTest) withObject:nil afterDelay:delay];      delay += 5;
     
-    [self performSelector:@selector(printLog:) withObject:@"===== All Test Down =====" afterDelay:60.0f];
+    [self performSelector:@selector(printLog:) withObject:@"===== All Test Down =====" afterDelay:delay];
 }
 
 - (void)simpleTest

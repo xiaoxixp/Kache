@@ -159,6 +159,11 @@
     }
     if ([[self.queues allKeys] containsObject:name]) {
         KQueue *queue = [self.queues objectForKey:name];
+
+#if KACHE_DEBUG
+        NSLog(@"Queue named: %@ - %@", name, queue);
+#endif
+
         return [queue pop];
     }
     
@@ -262,7 +267,7 @@
         for (NSDictionary *poolDict in [kacheDict objectForKey:@"pools"]) {
             KPool *pool = [[KPool alloc] initWithHolder:self.holder];
             [pool unserializeFrom:poolDict];
-            [self.queues setValue:pool forKey:[poolDict objectForKey:@"name"]];
+            [self.pools setValue:pool forKey:[poolDict objectForKey:@"name"]];
         }
 	}
 }
