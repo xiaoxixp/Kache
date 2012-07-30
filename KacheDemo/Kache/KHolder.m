@@ -135,4 +135,23 @@
     return nil;
 }
 
+// Convert object to NSDictionary.
+- (NSDictionary *)serialize
+{
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+            self.objects, @"objects",
+            self.keys, @"keys",
+            nil];
+}
+
+// Convert NSDictionary to object.
+- (void)unserializeFrom:(NSDictionary *)dict
+{
+    if ([[dict allKeys] containsObject:@"objects"]
+        && [[dict allKeys] containsObject:@"keys"]) {
+        self.objects = [dict objectForKey:@"objects"];
+        self.keys = [dict objectForKey:@"keys"];
+    }
+}
+
 @end

@@ -23,4 +23,7 @@
 - (KObject *)objectForKey:(NSString *)key;
 - (void)removeObjectForKey:(NSString *)key;
 
+- (NSDictionary *)serialize;
+- (void)unserializeFrom:(NSDictionary *)dict;
+
 @end

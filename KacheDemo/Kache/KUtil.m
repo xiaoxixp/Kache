@@ -10,14 +10,12 @@
 
 @implementation KUtil
 
-+ (NSInteger)nowTimestamp
-{
++ (NSInteger)nowTimestamp {
     return (NSInteger)ceil([[NSDate date] timeIntervalSince1970]); // Use Int For Computing.
 }
 
-+ (NSInteger)expiredTimestampForLife:(NSInteger)aSeconds
-{
-    return [KUtil nowTimestamp] + aSeconds;
++ (NSInteger)expiredTimestampForLife:(NSInteger)duration {
+    return [KUtil nowTimestamp] + duration;
 }
 
 @end

@@ -26,4 +26,7 @@
 - (void)push:(id)data;
 - (id)pop;
 
+- (NSDictionary *)serialize;
+- (void)unserializeFrom:(NSDictionary *)dict;
+
 @end

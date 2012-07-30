@@ -103,4 +103,24 @@
     }
 }
 
+- (NSDictionary *)serialize
+{
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+            self.pool,                                      @"pool",
+            [NSString stringWithFormat:@"%d", self.size],   @"size",
+            self.name,                                      @"name",
+            nil];
+}
+
+- (void)unserializeFrom:(NSDictionary *)dict
+{
+    if ([[dict allKeys] containsObject:@"size"]
+        && [[dict allKeys] containsObject:@"name"]
+        &&[[dict allKeys] containsObject:@"pool"]) {
+        self.size   = [[dict objectForKey:@"size"] intValue];
+        self.name   = [NSString stringWithFormat:@"%@", [dict objectForKey:@"name"]];
+        self.pool   = [[dict objectForKey:@"pool"] mutableCopy];
+    }
+}
+
 @end

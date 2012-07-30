@@ -10,7 +10,7 @@
 
 @interface KUtil : NSObject
 
-+ (NSInteger)expiredTimestampForLife:(NSInteger)aSeconds;
++ (NSInteger)expiredTimestampForLife:(NSInteger)duration;
 + (NSInteger)nowTimestamp;
 
 @end

@@ -22,4 +22,7 @@
 - (KPool *)initWithHolder:(KHolder *)holder;
 - (void)setValue:(id)value forKey:(NSString *)key expiredAfter:(NSInteger)duration;
 
+- (NSDictionary *)serialize;
+- (void)unserializeFrom:(NSDictionary *)dict;
+
 @end

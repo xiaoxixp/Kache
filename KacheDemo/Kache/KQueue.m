@@ -111,4 +111,29 @@
     return nil;
 }
 
+// Convert object to NSDictionary.
+- (NSDictionary *)serialize
+{
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+            [NSString stringWithFormat:@"%d", self.size],   @"size",
+            self.name,                                      @"name",
+            self.queue,                                     @"queue",
+            [NSString stringWithFormat:@"%d", self.offset], @"offset",
+            nil];
+}
+
+// Convert NSDictionary to object.
+- (void)unserializeFrom:(NSDictionary *)dict
+{
+    if ([[dict allKeys] containsObject:@"size"]
+        && [[dict allKeys] containsObject:@"name"]
+        && [[dict allKeys] containsObject:@"queue"]
+        && [[dict allKeys] containsObject:@"offset"]) {
+        self.size   = [[dict objectForKey:@"size"] intValue];
+        self.name   = [NSString stringWithFormat:@"%@", [dict objectForKey:@"name"]];
+        self.queue  = [[dict objectForKey:@"queue"] mutableCopy];
+        self.offset = [[dict objectForKey:@"offset"] intValue];
+    }
+}
+
 @end
