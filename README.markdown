@@ -52,10 +52,8 @@ NSString *cacheValueB = [Kache valueForKey:@"cache_key"]; // cacheValueB: nil
 
 <pre>
  // 设置21个缓存
-for (int i = 0; i <= 20; i ++) {
-    [Kache setValue:@"CacheValueForKeyTest"
-inDefaultPoolForKey:[NSString stringWithFormat:@"cache_key_%d", i]
-       expiredAfter:i+10];
+for (int i = 0; i = 20; i ++) {
+    [Kache setValue:@"CacheValueForKeyTest" inDefaultPoolForKey:[NSString stringWithFormat:@"cache_key_%d", i] expiredAfter:i+10];
 }
 
 NSString *cacheValueA = [Kache valueForKey:@"cache_key_0"]; // cacheValueA: nil
