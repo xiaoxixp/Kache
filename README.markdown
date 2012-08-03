@@ -3,7 +3,7 @@ Kache
 
 Kache是为iOS App开发的一款缓存组件。
 
-Installing/Configuring
+安装/配置
 ======================
 
 把Kache目录拷贝到你的工程下。
@@ -24,15 +24,15 @@ Installing/Configuring
 #define     KACHE_DEFAULT_LIFE_DURATION 864000
 </pre>
 
-Static Methods
+静态方法
 =========
 
 ## +(void)setValue:(id)value forKey:(NSString *)key expiredAfter:(NSInteger)duration
-##### *Description*
+##### *描述*
 
 设置一个普通的缓存值。
 
-##### *Example*
+##### *举例*
 
 <pre>
 [Kache setValue:@"CacheValueForKeyTest" forKey:@"cache_key" expiredAfter:3600];
@@ -41,6 +41,6 @@ NSString *cacheValueA = [Kache valueForKey:@"cache_key"]; // cacheValueA: @"Cach
 NSString *cacheValueB = [Kache valueForKey:@"cache_key"]; // cacheValueB: nil
 </pre>
 
-Instance Methods
-================
+实例方法
+=========
 
