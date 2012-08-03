@@ -24,7 +24,7 @@ Kache是为iOS App开发的一款缓存组件。
 #define     KACHE_DEFAULT_LIFE_DURATION 864000
 </pre>
 
-静态方法
+方法
 =========
 
 ## + (void)setValue:(id)value forKey:(NSString *)key expiredAfter:(NSInteger)duration
@@ -53,6 +53,7 @@ NSString *cacheValueB = [Kache valueForKey:@"cache_key"]; // cacheValueB: nil
 <pre>
  // 设置21个缓存
 for (int i = 20; i >= 0; i --) {
+    // 当i=0，第21个缓存设置的时候，最先过期的 cache_key_1 将被清理
     [Kache setValue:@"CacheValueForKeyTest"
 inDefaultPoolForKey:[NSString stringWithFormat:@"cache_key_%d", i]
        expiredAfter:i+10];
@@ -62,6 +63,21 @@ NSString *cacheValueA = [Kache valueForKey:@"cache_key_0"]; // cacheValueA: @"Ca
 NSString *cacheValueB = [Kache valueForKey:@"cache_key_1"]; // cacheValueB: @"nil"
 </pre>
 
-实例方法
-=========
+## + (void)pushValue:(id)value
+##### *描述*
 
+想默认队列压入一个值
+
+Kache提供一个缓存队列，队列默认长度为 KACHE_DEFAULT_QUEUE_SIZE (10)，压入队列的值在默认时间内过期。
+
+##### *举例*
+
+<pre>
+// 把11个值压入队列
+for (int i = 10; i >= 0; i --) {
+    // 当低11个值 @"QueueValue_0" 压入队列时，最先进入队列的 @"QueueValue_10" 将被清理
+    [Kache pushValue:[NSString stringWithFormat:@"QueueValue_%d", i]];
+}
+NSString *queueValueA = [Kache popValue]; // queueValueA: @"QueueValue_9"，此时队列中还剩9个值
+NSString *queueValueB = [Kache popValue]; // queueValueB: @"QueueValue_8"，此时队列中还剩8个值
+</pre>
