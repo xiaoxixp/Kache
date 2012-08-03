@@ -50,4 +50,7 @@
 + (void)newQueueWithName:(NSString *)name size:(NSInteger)size;
 + (void)newPoolWithName:(NSString *)name size:(NSInteger)size;
 
++ (void)saveToStorage;
++ (void)loadFromStorage;
+
 @end

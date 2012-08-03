@@ -85,12 +85,12 @@
     return [[Kache instance] newPoolWithName:name size:size];
 }
 
-+ (void)loadFromDisk {
-    return [[Kache instance] load];
++ (void)saveToStorage {
+    return [[Kache instance] save];
 }
 
-+ (void)saveToDisk {
-    return [[Kache instance] save];
++ (void)loadFromStorage {
+    return [[Kache instance] load];
 }
 
 #pragma mark - init
