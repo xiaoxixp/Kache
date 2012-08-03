@@ -10,3 +10,6 @@ profile
 *.pbxuser
 *.mode1v3
 External/GHUnit/*
+*.swp
+*.swo
+*.xcuserstate
