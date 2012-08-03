@@ -29,11 +29,8 @@ Copy the Kache directory to your project.
 #define     KACHE_DEFAULT_LIFE_DURATION 864000
 </pre>
 
-Methods
+Static Methods
 =========
-
-# Call Static Mehtods
-# 静态调用
 
 ## +(void)setValue:(id)value forKey:(NSString *)key expiredAfter:(NSInteger)duration
 ##### *Description*
@@ -48,3 +45,7 @@ Set a simple value.
 // 设置一个缓存，NSString类型的缓存，值为@"CacheValueForKeyTest"，键为@"cache_key"，1小时候过期。
 [Kache setValue:@"CacheValueForKeyTest" forKey:@"cache_key" expiredAfter:3600];
 </pre>
+
+Instance Methods
+================
+
