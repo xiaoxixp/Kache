@@ -42,8 +42,11 @@ Set a simple value.
 
 <pre>
 // Set a NSString: @"CacheValueForKeyTest" for key: @"cache_key", and it will be expired after an hour.
-// 设置一个缓存，NSString类型的缓存，值为@"CacheValueForKeyTest"，键为@"cache_key"，1小时候过期。
+// 设置一个缓存，NSString类型的缓存，值为@"CacheValueForKeyTest"，键为@"cache_key"，1小时过期。
 [Kache setValue:@"CacheValueForKeyTest" forKey:@"cache_key" expiredAfter:3600];
+NSString *cacheValueA = [Kache valueForKey:@"cache_key"]; // cacheValueA: @"CacheValueForKeyTest"
+// After an hour. 一小时后
+NSString *cacheValueB = [Kache valueForKey:@"cache_key"]; // cacheValueB: nil
 </pre>
 
 Instance Methods
